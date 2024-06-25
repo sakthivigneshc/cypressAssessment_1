@@ -6,10 +6,11 @@ describe('template spec', () => {
 
     cy.visit('https://docs.google.com/forms/d/e/1FAIpQLScPfEbpaoUu3WVwSDM9wIFX5uo1XQ1xpuHNtP7cF_rkR-o8Zg/viewform');
 
+    //Enter the name in the text box
     const Name = cy.get("input[type='text'] ");
     Name.should('be.visible').type("Sakthivignesh.C");
     
-    // select the 18 or above value
+    // select the 18 or above radio button
    const Age =  cy.get( "label[for='i12'] span[class='aDTYNe snByac OvPDhc OIC90c']" );
     Age.click();
 
